@@ -1,0 +1,118 @@
+body {
+    font-family: "Courier New", monospace;
+    background: #fafafa;
+    color: #2d3748;
+    margin: 0;
+    padding: 2rem;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #1a202c;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #4a5568;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.7rem;
+    position: relative;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005c99;
+}
+
+.current-role {
+    background: linear-gradient(135deg, #f7fafc 0%, #f0f2f4 100%);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 2px solid #717577;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack {
+    color: #718096;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+    background: #f7fafc;
+    padding: 0.8rem;
+    border-radius: 6px;
+    border-left: 3px solid #38b2ac;
+}
+
+.project {
+    background: #f8f9fa;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    border-left: 3px solid #48bb78;
+}
+
+.project b {
+    color: #2d3748;
+}
+
+.contact {
+    margin-top: 2rem;
+    border-top: 2px solid #e2e8f0;
+    background: #f7fafc;
+    border-radius: 8px;
+}
+
+ul {
+    margin: 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+li::marker {
+    color: #007acc;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #007acc, #38b2ac, #007acc);
+    margin: 3rem 0;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.project:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cert-joke {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
