@@ -27,6 +27,55 @@
         <a href="https://github.com/mozilla-firefox/firefox/commits?author=Lochipi">Firefox</a>,
         <a href="https://github.com/WebKit/WebKit/commits/main/?author=Lochipi">WebKit</a>, and
         <a href="https://chromium-review.googlesource.com/q/owner:cemase@igalia.com">V8/Chromium</a>.
+        My Mozilla patches are also on
+        <a href="https://phabricator.services.mozilla.com/people/revisions/7754/">Phabricator</a>.
+    </p>
+
+    <h2>Work at Igalia (Coding Experience)</h2>
+    <p>
+        Since June 2026 I've been in Igalia's Coding Experience program on the Web Languages track.
+        I worked on two different areas.
+    </p>
+    <p>
+        <strong>JavaScript engines and standards.</strong> I implement TC39 proposals and fix spec
+        conformance bugs in SpiderMonkey, and for Dynamic Code Brand Checks also in JavaScriptCore and V8.
+    </p>
+    <ul>
+        <li>
+            <strong>Dynamic Code Brand Checks:</strong> updated <code>CreateDynamicFunction</code> and the
+            WPT trusted-types tests in SpiderMonkey, with matching work in
+            <a href="https://github.com/WebKit/WebKit/pull/70340">WebKit</a>,
+            <a href="https://chromium-review.googlesource.com/q/owner:cemase@igalia.com">V8/Chromium</a>,
+            and the specs
+            (<a href="https://github.com/tc39/proposal-dynamic-code-brand-checks/pull/23">proposal PR #23</a>,
+            <a href="https://github.com/w3c/webappsec-csp/pull/818">CSP cleanup</a>).
+        </li>
+        <li>
+            <strong>Await Dictionary:</strong> I implemented <code>Promise.allKeyed</code> and
+            <code>Promise.allSettledKeyed</code> in SpiderMonkey before joining Igalia, and continued
+            and shipped them during the program.
+        </li>
+        <li>
+            <strong>Export star default:</strong> added the pref and shell option, and implemented the
+            proposal behind the pref.
+        </li>
+        <li>
+            <strong>Conformance fixes:</strong> <code>Promise.try</code> now uses <code>PromiseResolve</code>
+            for the non-error case, and <code>Iterator.prototype.take/drop</code> throw the right
+            <code>RangeError</code>.
+        </li>
+        <li>
+            <strong>JIT cleanup:</strong> moved the bailout helpers into <code>CodeGeneratorShared</code>.
+        </li>
+    </ul>
+    <p>
+        <strong>Firefox DevTools.</strong> I work on how the Console evaluates code.
+        So far I've made redeclaring <code>let</code> and <code>const</code> in the Console
+        behave the way developers expect, and fixed a shadowing bug where the Console rewrote
+        <code>let</code>/<code>const</code> to assignments for evals in frames.
+        I'm now working on another Console bug: when code contains an explicit
+        <code>await</code> and evaluates to a Promise, the result is awaited a second time
+        implicitly. I'll keep fixing more Console issues until the end of the program.
     </p>
 
     <h2>Leadership & Community Involvement</h2>
@@ -48,7 +97,7 @@
         <li>
             Spoke about Fedora and open source contributions at <a
                 href="https://www.linkedin.com/posts/cornelius-emase_fedora-avalanche-opensource-activity-7312472153717661698-Mq7v?utm_source=share&utm_medium=member_desktop&rcm=ACoAADVKw0MBCUnTwHBTGu_iaBBYVHTBgXGQiBg">Murang'a
-                University</a>(LinkedIn post). You can as well find the highlits <a
+                University</a>(LinkedIn post). You can as well find the highlights <a
                 href="https://mut-fedora-event.vercel.app/">by checking this website.</a> <br>
 
             You can as well check <a
